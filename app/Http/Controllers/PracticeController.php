@@ -15,12 +15,12 @@ class PracticeController extends Controller
 
     public function index()
     {
-        return view('new');
+        return view('practice');
     }
 
     public function missing_404()
     {
-        return view('new');
+        return view('practice');
         // replace this view if you have custom 404 view
     }
 }
