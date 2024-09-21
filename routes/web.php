@@ -32,4 +32,8 @@ Route::get('/new', [PracticeController::class, 'index']);
 
 Route::get('/json', [PracticeController::class, 'controllerMethod']);
 
-Route::any('{slug}', [PracticeController::class, 'missing_404']);
+//Route::any('{slug}', [PracticeController::class, 'missing_404']);
+
+Route::get('/practice', function () {
+    return Inertia::render('PracticeWelcome');
+});
