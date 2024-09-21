@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PracticeController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -27,6 +28,8 @@ Route::middleware('auth')->group(function () {
 require __DIR__ . '/auth.php';
 
 
-Route::get('/new', function () {
-    return view('new');
-});
+Route::get('/new', [PracticeController::class, 'index']);
+
+Route::get('/json', [PracticeController::class, 'controllerMethod']);
+
+Route::any('{slug}', [PracticeController::class, 'missing_404']);
