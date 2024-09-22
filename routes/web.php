@@ -2,6 +2,7 @@
 
 use App\Models\User;
 use Inertia\Inertia;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Application;
 use App\Http\Controllers\ProfileController;
@@ -16,8 +17,20 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/dashboard', function () {
-    return Inertia::render('Dashboard', ['users' => User::paginate(5)]);
+// Route::get('/dashboard', function () {
+//     return Inertia::render('Dashboard', ['users' => User::paginate(5)]);
+// })->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::get('/dashboard', function (Request $request) {
+    return Inertia::render('Dashboard', [
+        'users' => User::when($request->search, function ($query) use ($request) {
+            $query
+                ->where('name', 'like', '%' . $request->search . '%')
+                ->OrWhere('email', 'like', '%' . $request->search . '%');
+        })->paginate(5)->withQueryString(),
+
+        'searchTerm' => $request->search
+    ]);
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
