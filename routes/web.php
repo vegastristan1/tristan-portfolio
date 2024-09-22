@@ -37,3 +37,10 @@ Route::get('/json', [PracticeController::class, 'controllerMethod']);
 Route::get('/practice', function () {
     return Inertia::render('PracticeWelcome');
 });
+
+//there also alternative way to implement this one at 46 line
+Route::get('/practice/data', function () {
+    return inertia('Data', ['user' => 'Tristan']);
+});
+
+Route::inertia('/practice/data/alternative', 'Data', ['user' => 'Tristan Alternative']);
