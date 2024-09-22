@@ -4,9 +4,9 @@ defineProps({
 })
 // this will handle the @param of the web.php component array that will define at $props
 
-import Demo from '@/Layouts/DemoLayout.vue';
+import PracticeLayout from '@/Layouts/PracticeLayout.vue';
 
-// defineOptions({ layout: Demo });
+defineOptions({ layout: PracticeLayout });
 </script>
 
 <template>

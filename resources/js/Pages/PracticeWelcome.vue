@@ -1,4 +1,7 @@
 <script setup>
+import PracticeLayout from '@/Layouts/PracticeLayout.vue';
+
+defineOptions({ layout: PracticeLayout })
 </script>
 
 <template>
