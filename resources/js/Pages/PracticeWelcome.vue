@@ -1,8 +1,4 @@
 <script setup>
-import { Head } from '@inertiajs/vue3';
-import PracticeLayout from '@/Layouts/PracticeLayout.vue';
-
-
 </script>
 
 <template>

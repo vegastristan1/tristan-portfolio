@@ -1,12 +1,17 @@
+<script setup>
+import { Link } from '@inertiajs/vue3';
+</script>
+
 <template>
     <div>
         <header class="bg-indigo-500 text-white">
             <nav class="flex items-center justify-between p-4 max-w-screen-lg mx-auto">
                 <div class="space-x-6">
-                    <a href="/practice">Practice</a>
-                    <a href="/practice/data">Data</a>
-                    <a href="/practice/data/alternative">Data Alternative</a>
-                    <a href="/json">Json Sample Data</a>
+                    <Link href="/">Home</Link>
+                    <Link href="/practice">Practice</Link>
+                    <Link href="/practice/data">Data</Link>
+                    <Link href="/practice/data/alternative">Data Alternative</Link>
+                    <Link href="/json">Json Sample Data</Link>
                 </div>
             </nav>
         </header>
