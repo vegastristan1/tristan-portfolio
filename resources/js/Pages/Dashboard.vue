@@ -8,7 +8,8 @@ import { debounce } from 'lodash'; //after type
 
 const props = defineProps({
     users: Object,
-    searchTerm: String
+    searchTerm: String,
+    can: Object
 })
 
 const search = ref(props.searchTerm);
@@ -72,6 +73,7 @@ onMounted(() => {
                                 <th class="px-6 py-3 text-gray-700">Name</th>
                                 <th class="px-6 py-3 text-gray-700">Email</th>
                                 <th class="px-6 py-3 text-gray-700">Registration Date</th>
+                                <th class="px-6 py-3 text-gray-700" v-if="can.delete_user">Delete</th>
                             </tr>
                         </thead>
 
@@ -84,6 +86,9 @@ onMounted(() => {
                                 <td class="px-6 py-4">{{ user.name }}</td>
                                 <td class="px-6 py-4">{{ user.email }}</td>
                                 <td class="px-6 py-4">{{ getDate(user.created_at) }}</td>
+                                <td class="px-6 py-4" v-if="can.delete_user">
+                                    <button class="bg-red-500 w-6 h-6 rounded-full"></button>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
