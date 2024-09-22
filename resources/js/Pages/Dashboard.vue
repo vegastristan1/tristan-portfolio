@@ -1,4 +1,5 @@
 <script setup>
+import { onMounted } from 'vue';
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import PaginationLinks from '@/Components/PaginationLinks.vue';
 
@@ -12,6 +13,16 @@ const getDate = (date) =>
         month: "long",
         day: "numeric",
     })
+
+// Hide the flash message after 3 seconds
+onMounted(() => {
+    setTimeout(() => {
+        const flashMessage = document.getElementById('flashMessage');
+        if (flashMessage) {
+            flashMessage.style.display = 'none';
+        }
+    }, 3000); // 3000ms = 3 seconds
+});
 </script>
 
 <template>
@@ -22,6 +33,10 @@ const getDate = (date) =>
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">Dashboard</h2>
         </template>
+
+        <div v-if="$page.props.flash.message" id="flashMessage">
+            <p class="p-4 bg-green-200">{{ $page.props.flash.message }}</p>
+        </div>
 
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
