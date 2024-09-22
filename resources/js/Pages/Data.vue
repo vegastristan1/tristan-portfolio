@@ -1,17 +1,17 @@
 <script setup>
-    import { Head } from '@inertiajs/vue3';
-    defineProps({
-        user: String
-    })
-    // this will handle the @param of the web.php component array that will define at $props
+defineProps({
+    user: String
+})
+// this will handle the @param of the web.php component array that will define at $props
 
-    import Demo from '@/Layouts/DemoLayout.vue';
+import Demo from '@/Layouts/DemoLayout.vue';
 
-    defineOptions({layout: Demo});
+// defineOptions({ layout: Demo });
 </script>
 
 <template>
-     <Head title="Data" />
+
+    <Head title="Data" />
 
     <div>
         <h1 class="bg-blue-600">Sample Data</h1>

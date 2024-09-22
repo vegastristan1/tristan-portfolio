@@ -10,9 +10,9 @@ import { Link } from '@inertiajs/vue3';
 
                 <div class="space-x-6">
                     <Link href="/">Home</Link>
-                    <Link href="/practice">Practice</Link>
-                    <Link href="/practice/data">Data</Link>
-                    <Link href="/practice/data/alternative">Data Alternative</Link>
+                    <Link :href="route('practice')">Practice</Link>
+                    <Link :href="route('data')">Data</Link>
+                    <Link :href="route('alternative')">Data Alternative</Link>
                     <Link href="/json">Json Sample Data</Link>
                 </div>
             </nav>

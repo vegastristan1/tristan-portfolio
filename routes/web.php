@@ -37,11 +37,11 @@ Route::get('/json', [PracticeController::class, 'controllerMethod']);
 Route::get('/practice', function () {
     sleep(.5); //this will show progress indicator but load for 5 sec 
     return Inertia::render('PracticeWelcome');
-});
+})->name('practice');
 
 //there also alternative way to implement this one at 46 line
 Route::get('/practice/data', function () {
     return inertia('Data', ['user' => 'Tristan']);
-});
+})->name('data');
 
-Route::inertia('/practice/data/alternative', 'Data', ['user' => 'Tristan Alternative']);
+Route::inertia('/practice/data/alternative', 'Data', ['user' => 'Tristan Alternative'])->name('alternative');
