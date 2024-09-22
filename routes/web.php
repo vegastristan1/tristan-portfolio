@@ -35,7 +35,7 @@ Route::get('/json', [PracticeController::class, 'controllerMethod']);
 //Route::any('{slug}', [PracticeController::class, 'missing_404']);
 
 Route::get('/practice', function () {
-    sleep(5); //this will show progress indicator but load for 5 sec 
+    sleep(.5); //this will show progress indicator but load for 5 sec 
     return Inertia::render('PracticeWelcome');
 });
 
