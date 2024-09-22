@@ -11,7 +11,14 @@ const form = useForm({
     email: '',
     password: '',
     password_confirmation: '',
+    avatar: "",
+    preview: "",
 });
+
+const change = (e) => {
+    form.avatar = e.target.files[0];
+    form.preview = URL.createObjectURL(e.target.files[0])
+}
 
 const submit = () => {
     form.post(route('register'), {
@@ -22,21 +29,27 @@ const submit = () => {
 
 <template>
     <GuestLayout>
+
         <Head title="Register" />
 
         <form @submit.prevent="submit">
+            <div class="grid place-items-center">
+                <div class="relative w-28 h-28 rounded-full overflow-hidden border border-slate-300">
+                    <label for="avatar" class="absolute inset-0 grid content-end cursor-pointer">
+                        <span class="bg-white/70 pb-2 text-center">Avatar</span>
+                    </label>
+                    <input type="file" id="avatar" @input="change" hidden />
+                    <img alt="" class="object-cover w-28 h-28"
+                        :src="form.preview ? form.preview : '/storage/avatars/majinbuu1.jpg'" />
+                </div>
+                <p class="error mt-2">{{ form.errors.avatar }}</p>
+            </div>
+
             <div>
                 <InputLabel for="name" value="Name" />
 
-                <TextInput
-                    id="name"
-                    type="text"
-                    class="mt-1 block w-full"
-                    v-model="form.name"
-                    required
-                    autofocus
-                    autocomplete="name"
-                />
+                <TextInput id="name" type="text" class="mt-1 block w-full" v-model="form.name" required autofocus
+                    autocomplete="name" />
 
                 <InputError class="mt-2" :message="form.errors.name" />
             </div>
@@ -44,14 +57,8 @@ const submit = () => {
             <div class="mt-4">
                 <InputLabel for="email" value="Email" />
 
-                <TextInput
-                    id="email"
-                    type="email"
-                    class="mt-1 block w-full"
-                    v-model="form.email"
-                    required
-                    autocomplete="username"
-                />
+                <TextInput id="email" type="email" class="mt-1 block w-full" v-model="form.email" required
+                    autocomplete="username" />
 
                 <InputError class="mt-2" :message="form.errors.email" />
             </div>
@@ -59,14 +66,8 @@ const submit = () => {
             <div class="mt-4">
                 <InputLabel for="password" value="Password" />
 
-                <TextInput
-                    id="password"
-                    type="password"
-                    class="mt-1 block w-full"
-                    v-model="form.password"
-                    required
-                    autocomplete="new-password"
-                />
+                <TextInput id="password" type="password" class="mt-1 block w-full" v-model="form.password" required
+                    autocomplete="new-password" />
 
                 <InputError class="mt-2" :message="form.errors.password" />
             </div>
@@ -74,24 +75,16 @@ const submit = () => {
             <div class="mt-4">
                 <InputLabel for="password_confirmation" value="Confirm Password" />
 
-                <TextInput
-                    id="password_confirmation"
-                    type="password"
-                    class="mt-1 block w-full"
-                    v-model="form.password_confirmation"
-                    required
-                    autocomplete="new-password"
-                />
+                <TextInput id="password_confirmation" type="password" class="mt-1 block w-full"
+                    v-model="form.password_confirmation" required autocomplete="new-password" />
 
                 <InputError class="mt-2" :message="form.errors.password_confirmation" />
             </div>
 
             <div class="flex items-center justify-end mt-4">
-                <Link
-                    :href="route('login')"
-                    class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                >
-                    Already registered?
+                <Link :href="route('login')"
+                    class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                Already registered?
                 </Link>
 
                 <PrimaryButton class="ms-4" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
