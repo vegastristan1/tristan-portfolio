@@ -2,7 +2,6 @@
 </script>
 
 <template>
-
     <button data-drawer-target="separator-sidebar" data-drawer-toggle="separator-sidebar"
         aria-controls="separator-sidebar" type="button"
         class="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
@@ -19,21 +18,21 @@
         class="fixed top-0 left-0 z-40 w-72 h-screen transition-transform -translate-x-full sm:translate-x-0 p-4"
         aria-label="Sidebar">
         <div
-            class="flex flex-col justify-between h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800 rounded-lg mb-2">
+            class="flex flex-col justify-between h-full px-3 py-4 overflow-y-auto bg-gray-50 border border-slate-300 rounded-lg mb-2">
             <div>
                 <ul class="space-y-2 font-medium">
                     <div class="flex flex-col items-center pb-5 pt-5">
                         <img class="w-48 h-48 mb-3 rounded-full shadow-lg border-2 border-gray-300"
-                            src="/docs/images/people/profile-picture-3.jpg" alt="Portfolio image" />
-                        <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Tristan Vegas</h5>
+                            src="storage/avatars/profile_pic.jpeg" alt="Portfolio image" />
+                        <h5 class="mb-1 text-xl font-medium text-gray-900 ">Tristan Vegas</h5>
                         <span class="text-sm text-gray-500 dark:text-gray-400">Web Developer</span>
                     </div>
                 </ul>
-                <ul class="pt-4 mt-4h space-y-2 font-medium border-t border-gray-200 dark:border-gray-700">
+                <ul class="pt-4 mt-4h space-y-2 font-medium border-t border-gray-200 ">
                     <li>
                         <a href="#"
-                            class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group">
-                            <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                            class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-700 hover:text-white group">
+                            <svg class="flex-shrink-0 w-5 h-5 text-gray-900 transition duration-75 group-hover:text-white"
                                 aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                                 viewBox="0 0 17 20">
                                 <path
@@ -44,8 +43,8 @@
                     </li>
                     <li>
                         <a href="#"
-                            class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group">
-                            <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                            class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-700 hover:text-white group">
+                            <svg class="flex-shrink-0 w-5 h-5 text-gray-900 transition duration-75 group-hover:text-white"
                                 aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                                 viewBox="0 0 16 20">
                                 <path
@@ -56,8 +55,8 @@
                     </li>
                     <li>
                         <a href="#"
-                            class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group">
-                            <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                            class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-700 hover:text-white group">
+                            <svg class="flex-shrink-0 w-5 h-5 text-gray-900 transition duration-75 group-hover:text-white"
                                 aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                                 viewBox="0 0 20 18">
                                 <path d="M18 0H6a2 2 0 0 0-2 2h14v12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Z" />
@@ -69,8 +68,8 @@
                     </li>
                     <li>
                         <a href="#"
-                            class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group">
-                            <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                            class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-700 hover:text-white group">
+                            <svg class="flex-shrink-0 w-5 h-5 text-gray-900 transition duration-75 group-hover:text-white"
                                 aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                                 viewBox="0 0 21 21">
                                 <path
@@ -84,7 +83,7 @@
             <div>
                 <ul class="">
                     <div class="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
-                        <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                        <a href="#" class="text-gray-900 hover:text-blue-700 ">
                             <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor" viewBox="0 0 8 19">
                                 <path fill-rule="evenodd"
@@ -93,7 +92,7 @@
                             </svg>
                             <span class="sr-only">Facebook page</span>
                         </a>
-                        <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                        <a href="#" class="text-gray-900 hover:text-blue-700 ">
                             <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor" viewBox="0 0 21 16">
                                 <path
@@ -101,7 +100,7 @@
                             </svg>
                             <span class="sr-only">Discord community</span>
                         </a>
-                        <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                        <a href="#" class="text-gray-900 hover:text-blue-700 ">
                             <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor" viewBox="0 0 20 17">
                                 <path fill-rule="evenodd"
@@ -110,7 +109,7 @@
                             </svg>
                             <span class="sr-only">Twitter page</span>
                         </a>
-                        <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                        <a href="#" class="text-gray-900 hover:text-blue-700 ">
                             <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd"
@@ -119,7 +118,7 @@
                             </svg>
                             <span class="sr-only">GitHub account</span>
                         </a>
-                        <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                        <a href="#" class="text-gray-900 hover:text-blue-700 ">
                             <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd"
@@ -134,7 +133,7 @@
         </div>
     </aside>
 
-    <div class="p-4 ps-10 sm:ml-64">
+    <div class="p-4 ps-10 sm:ml-64 ">
         <nav class="bg-white border-gray-200 dark:bg-gray-900 rounded-lg mb-2">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -205,45 +204,120 @@
             <div>
                 <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900">
                     What I'm Doing</h1>
-                <div class="grid grid-cols-3 gap-4 mb-4">
+                <div class="grid grid-cols-2 gap-4 mb-4">
 
                     <a href="#"
-                        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-200 ">
                         <img class="object-cover w-28 rounded-t-lg h-28 p-4" src="storage/icons/user-interface.png"
                             alt="">
                         <div class="flex flex-col justify-between p-4 leading-normal">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Web Design
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Web Design
                             </h5>
-                            <!-- <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
-                                technology acquisitions of 2021 so far, in reverse chronological order.</p> -->
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                                technology acquisitions of 2021 so far, in reverse chronological order.</p>
                         </div>
                     </a>
 
                     <a href="#"
-                        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-200 ">
                         <img class="object-cover w-28 rounded-t-lg h-28 p-4" src="storage/icons/coding.png" alt="">
                         <div class="flex flex-col justify-between p-4 leading-normal">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Web
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Web
                                 Development</h5>
-                            <!-- <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
-                                technology acquisitions of 2021 so far, in reverse chronological order.</p> -->
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                                technology acquisitions of 2021 so far, in reverse chronological order.</p>
                         </div>
                     </a>
 
                     <a href="#"
-                        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-200 ">
                         <img class="object-cover w-28 rounded-t-lg h-28 p-4" src="storage/icons/mobile-application.png"
                             alt="">
                         <div class="flex flex-col justify-between p-4 leading-normal">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Mobile
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Mobile
                                 Development</h5>
-                            <!-- <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
-                                technology acquisitions of 2021 so far, in reverse chronological order.</p> -->
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                                technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                        </div>
+                    </a>
+
+                    <a href="#"
+                        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-200 ">
+                        <img class="object-cover w-28 rounded-t-lg h-28 p-4" src="storage/icons/mobile-application.png"
+                            alt="">
+                        <div class="flex flex-col justify-between p-4 leading-normal">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Mobile
+                                Development</h5>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                                technology acquisitions of 2021 so far, in reverse chronological order.</p>
                         </div>
                     </a>
                 </div>
             </div>
-            <div>
+
+            <!-- <div>
+                <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900">
+                    Tools</h1>
+                <div class="grid grid-cols-8 gap-4 mb-4">
+                    <div class="max-w-sm flex flex-col items-center bg-white">
+                        <a href="#">
+                            <img class="rounded-t-lg h-32" src="storage/icon-tools/angular-brands-solid.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="max-w-sm flex flex-col items-center bg-white">
+                        <a href="#">
+                            <img class="rounded-t-lg h-32" src="storage/icon-tools/aws-brands-solid.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="max-w-sm flex flex-col items-center bg-white">
+                        <a href="#">
+                            <img class="rounded-t-lg h-32" src="storage/icon-tools/css3-alt-brands-solid.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="max-w-sm flex flex-col items-center bg-white">
+                        <a href="#">
+                            <img class="rounded-t-lg h-32" src="storage/icon-tools/html5-brands-solid.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="max-w-sm flex flex-col items-center bg-white">
+                        <a href="#">
+                            <img class="rounded-t-lg h-32" src="storage/icon-tools/java-brands-solid.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="max-w-sm flex flex-col items-center bg-white">
+                        <a href="#">
+                            <img class="rounded-t-lg h-32" src="storage/icon-tools/js-brands-solid.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="max-w-sm flex flex-col items-center bg-white">
+                        <a href="#">
+                            <img class="rounded-t-lg h-32" src="storage/icon-tools/laravel-brands-solid.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="max-w-sm flex flex-col items-center bg-white">
+                        <a href="#">
+                            <img class="rounded-t-lg h-32" src="storage/icon-tools/node-js-brands-solid.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="max-w-sm flex flex-col items-center bg-white">
+                        <a href="#">
+                            <img class="rounded-t-lg h-32" src="storage/icon-tools/php-brands-solid.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="max-w-sm flex flex-col items-center bg-white">
+                        <a href="#">
+                            <img class="rounded-t-lg h-32" src="storage/icon-tools/python-brands-solid.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="max-w-sm flex flex-col items-center bg-white">
+                        <a href="#">
+                            <img class="rounded-t-lg h-32" src="storage/icon-tools/wordpress-brands-solid.svg" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- <div>
                 <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900">
                     Testimonials (Optional)</h1>
                 <div class="grid grid-cols-2 gap-4 mb-4">
@@ -282,7 +356,7 @@
                         </figcaption>
                     </figure>
                 </div>
-            </div>
+            </div> -->
 
             <!-- <div>
                 <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900">
