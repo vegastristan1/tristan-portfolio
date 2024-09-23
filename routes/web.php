@@ -9,13 +9,17 @@ use Illuminate\Foundation\Application;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PracticeController;
 
+// Route::get('/', function () {
+//     return Inertia::render('Welcome', [
+//         'canLogin' => Route::has('login'),
+//         'canRegister' => Route::has('register'),
+//         'laravelVersion' => Application::VERSION,
+//         'phpVersion' => PHP_VERSION,
+//     ]);
+// });
+
 Route::get('/', function () {
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
+    return Inertia::render('Welcome');
 });
 
 // Route::get('/dashboard', function () {
@@ -32,7 +36,7 @@ Route::get('/dashboard', function (Request $request) {
 
         'searchTerm' => $request->search,
 
-        'can' => [
+        'canDelete' => [
             'delete_user' => Auth::user() ? Auth::user()->can('delete', User::class) : null
         ]
     ]);
