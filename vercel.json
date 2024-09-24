@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "framework": "vite",
+    "framework": "null",
     "functions": {
         "api/index.php": { "runtime": "vercel-php@0.6.0" }
     },
@@ -19,6 +19,7 @@
         }
     ],
     "env": {
+        "APP_NAME": "Test",
         "APP_ENV": "production",
         "APP_DEBUG": "true",
         "APP_URL": "https://tristan-portfolio-ecru.vercel.app/",
