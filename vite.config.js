@@ -23,4 +23,5 @@ export default defineConfig({
 			ziggy: path.resolve('vendor/tightenco/ziggy/dist'),
 		},
 	},
+    base: 'https://tristan-portfolio-ecru.vercel.app/',
 });
