@@ -20,8 +20,8 @@
     ],
     "env": {
         "APP_ENV": "production",
-        "APP_DEBUG": "false",
-        "APP_URL": "https://maharlika-v1.vercel.app",
+        "APP_DEBUG": "true",
+        "APP_URL": "https://tristan-portfolio-ecru.vercel.app/",
 
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
