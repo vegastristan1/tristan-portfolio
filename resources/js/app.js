@@ -5,6 +5,7 @@ import { createApp, h } from 'vue';
 import { createInertiaApp, Head, Link } from '@inertiajs/vue3';
 import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import { ZiggyVue } from '../../vendor/tightenco/ziggy';
+import { Ziggy } from './ziggy'; // if this doesn't work, try importing it from `ziggy/dist/vue
 import Layout from './Layouts/GuestLayout.vue';
 
 const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
@@ -24,7 +25,7 @@ createInertiaApp({
             .use(plugin)
             .component("Head", Head)
             .component("Link", Link)
-            .use(ZiggyVue)
+            .use(ZiggyVue, Ziggy)
             .mount(el);
     },
     progress: {
