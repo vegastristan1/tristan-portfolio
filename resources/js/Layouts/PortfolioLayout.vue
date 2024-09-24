@@ -3,9 +3,8 @@ import SideBarNavigation from '@/Components/SideBarNavigation.vue';
 </script>
 
 <template>
-    <SideBarNavigation></SideBarNavigation>
-
-    <div class="p-4 ps-10 sm:ml-64 ">
+    <!-- sm:ml-64 lg:ps-10-->
+    <div class="p-4 lg:ml-72 lg:ps-7">
         <nav class="border-gray-200 bg-slate-800 rounded-lg mb-2">
             <div class="flex flex-wrap items-center justify-between p-4">
                 <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -13,9 +12,10 @@ import SideBarNavigation from '@/Components/SideBarNavigation.vue';
                         < />
                     </span>
                 </a>
-                <button data-collapse-toggle="navbar-default" type="button"
-                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                    aria-controls="navbar-default" aria-expanded="false">
+                <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg 
+                    md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200
+                     dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default"
+                    aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
                     <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                         viewBox="0 0 17 14">
@@ -23,6 +23,7 @@ import SideBarNavigation from '@/Components/SideBarNavigation.vue';
                             d="M1 1h15M1 7h15M1 13h15" />
                     </svg>
                 </button>
+
                 <div class="hidden w-full md:block md:w-auto" id="navbar-default">
                     <ul
                         class="text-xl font-bold flex flex-col p-4 md:p-0 mt-4 border rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-slate-800 border-gray-700">
@@ -53,6 +54,25 @@ import SideBarNavigation from '@/Components/SideBarNavigation.vue';
         </nav>
 
         <main class="">
+
+            <!-- Sidebar navigation -->
+            <aside id="separator-sidebar" class="sm:relative lg:fixed top-0 left-0 bottom-0 z-40 sm:w-auto sm:h-auto md:w-auto md:h-auto lg:w-72 lg:h-auto transition-transform sm:translate-x-0 
+                lg:m-4">
+                <SideBarNavigation />
+            </aside>
+
+            <!-- <button data-drawer-target="separator-sidebar" data-drawer-toggle="separator-sidebar"
+                aria-controls="separator-sidebar" type="button"
+                class="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+                <span class="sr-only">Open sidebar</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path clip-rule="evenodd" fill-rule="evenodd"
+                        d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z">
+                    </path>
+                </svg>
+            </button> -->
+
             <slot />
         </main>
     </div>
