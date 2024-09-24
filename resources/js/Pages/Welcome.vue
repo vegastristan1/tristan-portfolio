@@ -66,7 +66,7 @@ onMounted(() => {
             <div class="grid grid-cols-1 gap-4 mb-4 justify-items-center md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
                 <a href="#"
                     class="flex flex-col items-center bg-slate-700 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-700 ">
-                    <img class="object-cover w-28 rounded-t-lg h-28 p-4 invert" src="storage/icons/user-interface.png"
+                    <img class="object-cover w-28 rounded-t-lg h-28 p-4 invert" src="images/icons/user-interface.png"
                         alt="">
                     <div class="flex flex-col justify-between p-4 leading-normal">
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-300 ">Web Design
@@ -80,7 +80,7 @@ onMounted(() => {
 
                 <a href="#"
                     class="flex flex-col items-center bg-slate-700 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-700 ">
-                    <img class="object-cover w-28 rounded-t-lg h-28 p-4 invert" src="storage/icons/coding.png" alt="">
+                    <img class="object-cover w-28 rounded-t-lg h-28 p-4 invert" src="images/icons/coding.png" alt="">
                     <div class="flex flex-col justify-between p-4 leading-normal">
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-300">Web
                             Development</h5>
@@ -94,7 +94,7 @@ onMounted(() => {
                 <a href="#"
                     class="flex flex-col items-center bg-slate-700 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-700 ">
                     <img class="object-cover w-28 rounded-t-lg h-28 p-4 invert"
-                        src="storage/icons/mobile-application.png" alt="">
+                        src="images/icons/mobile-application.png" alt="">
                     <div class="flex flex-col justify-between p-4 leading-normal">
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-300">Mobile
                             Development</h5>
