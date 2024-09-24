@@ -18,8 +18,12 @@ use App\Http\Controllers\PracticeController;
 //     ]);
 // });
 
+// Route::get('/', function () {
+//     return Inertia::render('Welcome');
+// });
+
 Route::get('/', function () {
-    return Inertia::render('Welcome');
+    return view('sample');
 });
 
 // Route::get('/dashboard', function () {
