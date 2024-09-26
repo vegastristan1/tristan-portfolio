@@ -20,7 +20,11 @@ use App\Http\Controllers\PracticeController;
 
 Route::get('/', function () {
     return Inertia::render('Welcome');
-});
+})->name('about');
+
+Route::get('/resume', function () {
+    return Inertia::render('Resume');
+})->name('resume');
 
 // Route::get('/', function () {
 //     return view('sample');
@@ -55,20 +59,20 @@ Route::middleware('auth')->group(function () {
 require __DIR__ . '/auth.php';
 
 
-Route::get('/new', [PracticeController::class, 'index']);
+// Route::get('/new', [PracticeController::class, 'index']);
 
-Route::get('/json', [PracticeController::class, 'controllerMethod']);
+// Route::get('/json', [PracticeController::class, 'controllerMethod']);
 
 //Route::any('{slug}', [PracticeController::class, 'missing_404']);
 
-Route::get('/practice', function () {
-    sleep(.5); //this will show progress indicator but load for 5 sec 
-    return Inertia::render('PracticeWelcome');
-})->name('practice');
+// Route::get('/practice', function () {
+//     sleep(.5); //this will show progress indicator but load for 5 sec 
+//     return Inertia::render('PracticeWelcome');
+// })->name('practice');
 
 //there also alternative way to implement this one at 46 line
-Route::get('/practice/data', function () {
-    return inertia('Data', ['user' => 'Tristan']);
-})->name('data');
+// Route::get('/practice/data', function () {
+//     return inertia('Data', ['user' => 'Tristan']);
+// })->name('data');
 
-Route::inertia('/practice/data/alternative', 'Data', ['user' => 'Tristan Alternative'])->name('alternative');
+// Route::inertia('/practice/data/alternative', 'Data', ['user' => 'Tristan Alternative'])->name('alternative');

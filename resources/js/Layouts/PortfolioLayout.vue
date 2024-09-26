@@ -25,24 +25,28 @@ import SideBarNavigation from '@/Components/SideBarNavigation.vue';
                 </button>
 
                 <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <!-- <Link :href="route('resume')">Resume</Link> -->
                     <ul
                         class="text-xl font-bold flex flex-col p-4 md:p-0 mt-4 border rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-slate-800 border-gray-700">
                         <li>
-                            <a href="#"
+                            <Link :href="route('about')"
                                 class="block py-2 px-3 bg-blue-700 rounded md:bg-transparent md:p-0 text-red-600"
-                                aria-current="page">About</a>
+                                aria-current="page">About</Link>
                         </li>
                         <li>
-                            <a href="#"
-                                class="block py-2 px-3 rounded hover:bg-transparent md:border-0 hover:text-red-600 md:p-0 text-white hover:bg-gray-700">Resume</a>
+                            <Link :href="route('resume')"
+                                class="block py-2 px-3 rounded hover:bg-transparent md:border-0 hover:text-red-600 md:p-0 text-white hover:bg-gray-700">
+                            Resume</Link>
                         </li>
                         <li>
-                            <a href="#"
-                                class="block py-2 px-3 rounded hover:bg-transparent md:border-0 hover:text-red-600 md:p-0 text-white hover:bg-gray-700">Portfolio</a>
+                            <Link href="/Portfolio"
+                                class="block py-2 px-3 rounded hover:bg-transparent md:border-0 hover:text-red-600 md:p-0 text-white hover:bg-gray-700">
+                            Portfolio</Link>
                         </li>
                         <li>
-                            <a href="#"
-                                class="block py-2 px-3 rounded hover:bg-transparent md:border-0 hover:text-red-600 md:p-0 text-white hover:bg-gray-700">Blog</a>
+                            <Link href="/Blog"
+                                class="block py-2 px-3 rounded hover:bg-transparent md:border-0 hover:text-red-600 md:p-0 text-white hover:bg-gray-700">
+                            Blog</Link>
                         </li>
                         <li>
                             <a href="#"

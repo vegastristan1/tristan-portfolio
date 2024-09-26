@@ -9,3 +9,33 @@ body {
     background-position: center center; /* Centers the image */
     background-attachment: fixed;
 }
+
+@layer utilities {
+    .connected-list > li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background-color: red; /* Line color */
+    }
+
+    .connected-list > li::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 10px;
+        height: 2px;
+        background-color: black; /* Line color */
+    }
+
+    .connected-list > li ul li::before {
+        content: none; /* Remove lines for sub-items */
+    }
+
+    .connected-list > li:last-child::before {
+        background-color: transparent; /* Remove the line after the last bullet */
+    }
+}

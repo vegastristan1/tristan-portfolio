@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 import vue from '@vitejs/plugin-vue';
-import path from 'path'
+// import path from 'path'
 
 export default defineConfig({
     plugins: [
@@ -18,10 +18,10 @@ export default defineConfig({
             },
         }),
     ],
-    resolve: {
-		alias: {
-			ziggy: path.resolve('vendor/tightenco/ziggy/dist'),
-		},
-	},
-    base: 'https://tristan-portfolio-ecru.vercel.app/',
+    // resolve: {
+	// 	alias: {
+	// 		ziggy: path.resolve('vendor/tightenco/ziggy'),
+	// 	},
+	// },
+    // base: 'https://tristan-portfolio-ecru.vercel.app/',
 });
