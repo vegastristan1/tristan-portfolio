@@ -3,8 +3,7 @@ import { onMounted, ref, watch } from 'vue';
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import PaginationLinks from '@/Components/PaginationLinks.vue';
 import { router } from '@inertiajs/vue3';
-import { throttle } from 'lodash'; //every type
-import { debounce } from 'lodash'; //after type
+// import { throttle, debounce } from 'lodash';
 
 const props = defineProps({
     users: Object,
@@ -14,26 +13,26 @@ const props = defineProps({
 
 const search = ref(props.searchTerm);
 
-watch(search, debounce(
-    (q) => router.get("/dashboard", { search: q }, { preserveState: true }), 500)
-);
+// watch(search, debounce(
+//     (q) => router.get("/dashboard", { search: q }, { preserveState: true }), 500)
+// );
 
-const getDate = (date) =>
-    new Date(date).toLocaleDateString('en-us', {
-        year: "numeric",
-        month: "long",
-        day: "numeric",
-    })
+// const getDate = (date) =>
+//     new Date(date).toLocaleDateString('en-us', {
+//         year: "numeric",
+//         month: "long",
+//         day: "numeric",
+//     })
 
 // Hide the flash message after 3 seconds
-onMounted(() => {
-    setTimeout(() => {
-        const flashMessage = document.getElementById('flashMessage');
-        if (flashMessage) {
-            flashMessage.style.display = 'none';
-        }
-    }, 3000); // 3000ms = 3 seconds
-});
+// onMounted(() => {
+//     setTimeout(() => {
+//         const flashMessage = document.getElementById('flashMessage');
+//         if (flashMessage) {
+//             flashMessage.style.display = 'none';
+//         }
+//     }, 3000); // 3000ms = 3 seconds
+// });
 </script>
 
 <template>
@@ -45,9 +44,9 @@ onMounted(() => {
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">Dashboard</h2>
         </template>
 
-        <div v-if="$page.props.flash.message" id="flashMessage">
+        <!-- <div v-if="$page.props.flash.message" id="flashMessage">
             <p class="p-4 bg-green-200">{{ $page.props.flash.message }}</p>
-        </div>
+        </div> -->
 
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
@@ -57,7 +56,7 @@ onMounted(() => {
             </div>
         </div>
 
-        <div class="py-12">
+        <!-- <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="overflow-x-auto">
                     <div class="flex justify-end mb-4">
@@ -94,13 +93,11 @@ onMounted(() => {
                     </table>
                 </div>
 
-                <!-- Pagination Links -->
                 <div class="mt-4">
-                    <!-- Pagination elements go here -->
                     <PaginationLinks :paginator="users" />
                 </div>
             </div>
-        </div>
+        </div> -->
 
     </AuthenticatedLayout>
 </template>
