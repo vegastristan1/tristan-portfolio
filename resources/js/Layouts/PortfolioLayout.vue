@@ -41,14 +41,16 @@ const showingNavigationDropdown = ref(false);
                     <ul
                         class="text-xl font-bold flex flex-col p-4 md:p-0 mt-4 border rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-slate-800 border-gray-700">
                         <li>
-                            <Link :href="route('about')"
-                                class="block py-2 px-3 bg-blue-700 rounded md:bg-transparent md:p-0 text-red-600"
-                                aria-current="page">About</Link>
+                            <Link :href="route('about')" :class="{
+                                'block py-2 px-3 bg-blue-700 rounded md:bg-transparent md:p-0 text-red-600': route().current('about'),
+                                'block py-2 px-3 text-white rounded hover:bg-transparent md:border-0 hover:text-red-600 md:p-0': !route().current('about')
+                            }" aria-current="page">About</Link>
                         </li>
                         <li>
-                            <Link :href="route('resume')"
-                                class="block py-2 px-3 rounded hover:bg-transparent md:border-0 hover:text-red-600 md:p-0 text-white hover:bg-gray-700">
-                            Resume</Link>
+                            <Link :href="route('resume')" :class="{
+                                'block py-2 px-3 bg-blue-700 rounded md:bg-transparent md:p-0 text-red-600': route().current('resume'),
+                                'block py-2 px-3 text-white rounded hover:bg-transparent md:border-0 hover:text-red-600 md:p-0': !route().current('resume')
+                            }" aria-current="page">Resume</Link>
                         </li>
                         <li>
                             <Link href="/Portfolio"
