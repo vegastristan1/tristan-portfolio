@@ -37,14 +37,18 @@ onMounted(() => {
                     Education
                 </h1>
 
-                <ul class="list-disc text-white pt-4 space-y-2 font-medium border-gray-200">
-                    <li class="ms-5">
-                        <p class="italic">June 2015 - September 2020</p>
-                        <h1 class="text-4xl font-extrabold leading-none tracking-tight text-red-600">Bachelor of
-                            Science: Information Technology</h1>
-                        <span class="text-gray-500 transition duration-75 rounded-lg group">University of Nueca Caceres
-                            - J,
-                            Hernandez Ave, Naga, Camarines Sur</span>
+                <ul class="connected-list list-disc text-white ms-5 pt-4 space-y-2 font-medium border-gray-200">
+                    <li class="collected-item ms-5">
+                        <div class="collected-bullet">
+                            <p class="italic">June 2015 - September 2020</p>
+                            <h1 class="text-4xl font-extrabold leading-none tracking-tight text-red-600">Bachelor of
+                                Science: Information Technology</h1>
+                            <span class="text-gray-500 transition duration-75 rounded-lg group">University of Nueca
+                                Caceres
+                                - J,
+                                Hernandez Ave, Naga, Camarines Sur</span>
+                        </div>
+
                     </li>
                 </ul>
             </div>
@@ -56,93 +60,91 @@ onMounted(() => {
                 </h1>
 
                 <div>
-                    <ul class="list-disc text-white ms-5 pt-4 space-y-2 font-medium border-gray-200">
-                        <li class="mb-5">
-                            <h1 class="italic">July 2022 - March 2024</h1>
-                            <h1 class="text-4xl font-extrabold leading-none tracking-tight text-red-600">
-                                Contract - Full Stack Developer / <span class="text-gray-200">Foxhole QA, Austin, Texas,
-                                    United States</span>
-                            </h1>
-                            <ul class="list-disc text-red-600 pt-4 space-y-2 font-medium border-gray-200">
-                                <li class="ms-5">
-                                    <span class="text-gray-500 transition duration-75 rounded-lg group">Created and
-                                        managed the Foxhole QA website with an admin dashboard for updates on blogs,
-                                        featured works, and testimonials.</span>
-                                </li>
-                                <li class="ms-5">
-                                    <span class="text-gray-500 transition duration-75 rounded-lg group">Provided ongoing
-                                        maintenance and support for website functionality</span>
-                                </li>
-                                <li class="ms-5">
-                                    <span class="text-gray-500 transition duration-75 rounded-lg group">Specialized in
-                                        Mobile Development and Data Analytics tasks, Ensuring diverse client needs were
-                                        met effectively</span>
-                                </li>
-                            </ul>
+                    <ul class="connected-list list-disc text-white ms-5 pt-4 font-medium border-gray-200">
+                        <li class="collected-item mb-5 pb-5">
+                            <div class="collected-bullet big">
+                                <h1 class="italic">July 2022 - March 2024</h1>
+                                <h1 class="text-4xl font-extrabold leading-none tracking-tight text-red-600">
+                                    Contract - Full Stack Developer / <span class="text-gray-200">Foxhole QA, Austin,
+                                        Texas,
+                                        United States</span>
+                                </h1>
+                                <ul class="list-disc text-red-600 pt-4 space-y-2 font-medium border-gray-200">
+                                    <li class="ms-5">
+                                        <span class="text-gray-500 transition duration-75 rounded-lg group">Created and
+                                            managed the Foxhole QA website with an admin dashboard for updates on blogs,
+                                            featured works, and testimonials.</span>
+                                    </li>
+                                    <li class="ms-5">
+                                        <span class="text-gray-500 transition duration-75 rounded-lg group">Provided
+                                            ongoing
+                                            maintenance and support for website functionality</span>
+                                    </li>
+                                    <li class="ms-5">
+                                        <span class="text-gray-500 transition duration-75 rounded-lg group">Specialized
+                                            in
+                                            Mobile Development and Data Analytics tasks, Ensuring diverse client needs
+                                            were
+                                            met effectively</span>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
-                        <li class="mb-5">
-                            <h1 class="italic">April 2021 - June 2022</h1>
-                            <h1 class="text-4xl font-extrabold leading-none tracking-tight text-red-600">Part Time /
-                                Mobile Developer / Web Developer <span class="text-gray-200">Freelance</span></h1>
-                            <ul class="list-disc text-red-600 pt-4 space-y-2 font-medium border-gray-200">
-                                <li class="ms-5">
-                                    <h1 class="text-gray-200">April 2021 - June 2022</h1>
-                                    <span class="text-gray-500 transition duration-75 rounded-lg group">Creating
-                                        Multiplayer for Educational Purposes - Mobile Game.</span>
-                                </li>
-                                <li class="ms-5">
-                                    <h1 class="text-gray-200">April 2021 - July 2021</h1>
-                                    <span class="text-gray-500 transition duration-75 rounded-lg group">Create Web
-                                        Application for Laundry Shop and Mobile Application.</span>
-                                </li>
-                            </ul>
+                        <li class="collected-item mb-5 pb-5">
+                            <div class="collected-bullet">
+                                <h1 class="italic">April 2021 - June 2022</h1>
+                                <h1 class="text-4xl font-extrabold leading-none tracking-tight text-red-600">Part Time /
+                                    Mobile Developer / Web Developer <span class="text-gray-200">Freelance</span></h1>
+                                <ul class="list-disc text-red-600 pt-4 space-y-2 font-medium border-gray-200">
+                                    <li class="ms-5">
+                                        <h1 class="text-gray-200">April 2021 - June 2022</h1>
+                                        <span class="text-gray-500 transition duration-75 rounded-lg group">Creating
+                                            Multiplayer for Educational Purposes - Mobile Game.</span>
+                                    </li>
+                                    <li class="ms-5">
+                                        <h1 class="text-gray-200">April 2021 - July 2021</h1>
+                                        <span class="text-gray-500 transition duration-75 rounded-lg group">Create Web
+                                            Application for Laundry Shop and Mobile Application.</span>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
-                        <li class="mb-5">
-                            <h1 class="italic">April 2018 - July 2018</h1>
-                            <h1 class="text-4xl font-extrabold leading-none tracking-tight text-red-600">On the Job
-                                Training / <span class="text-gray-200">Tokyo System Solutions, Unit 205, Citrine
-                                    Building, Magsaysay Ave, Naga
-                                    City</span></h1>
-                            <ul class="list-disc text-red-600 pt-4 space-y-2 font-medium border-gray-200">
-                                <li class="ms-5">
-                                    <span class="text-gray-500 transition duration-75 rounded-lg group">Create a Human
-                                        Resource and Web Application that can be used for other companies.</span>
-                                </li>
-                                <li class="ms-5">
-                                    <span class="text-gray-500 transition duration-75 rounded-lg group">Learning an
-                                        Angular Framework for the Web Application.</span>
-                                </li>
-                            </ul>
+                        <li class="collected-item mb-5 pb-5">
+                            <div class="collected-bullet">
+                                <h1 class="italic">April 2018 - July 2018</h1>
+                                <h1 class="text-4xl font-extrabold leading-none tracking-tight text-red-600">On the Job
+                                    Training / <span class="text-gray-200">Tokyo System Solutions, Unit 205, Citrine
+                                        Building, Magsaysay Ave, Naga
+                                        City</span></h1>
+                                <ul class="list-disc text-red-600 pt-4 space-y-2 font-medium border-gray-200">
+                                    <li class="ms-5">
+                                        <span class="text-gray-500 transition duration-75 rounded-lg group">Create a
+                                            Human
+                                            Resource and Web Application that can be used for other companies.</span>
+                                    </li>
+                                    <li class="ms-5">
+                                        <span class="text-gray-500 transition duration-75 rounded-lg group">Learning an
+                                            Angular Framework for the Web Application.</span>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                 </div>
-
             </div>
         </div>
 
-        <ul class="connected-list space-y-6">
-            <li class="relative pl-6">
-                <span class="inline-block">Item 1</span>
-                <ul class="pl-4">
-                    <li class="relative pl-6">Subitem 1.1</li>
-                    <li class="relative pl-6">Subitem 1.2</li>
-                </ul>
-            </li>
-            <li class="relative pl-6">
-                <span class="inline-block">Item 2</span>
-                <ul class="pl-4">
-                    <li class="relative pl-6">Subitem 2.1</li>
-                    <li class="relative pl-6">Subitem 2.2</li>
-                </ul>
-            </li>
-            <li class="relative pl-6">
-                <span class="inline-block">Item 3</span>
-                <ul class="pl-4">
-                    <li class="relative pl-6">Subitem 3.1</li>
-                    <li class="relative pl-6">Subitem 3.2</li>
-                </ul>
-            </li>
-        </ul>
+        <div class="grid grid-cols-1 gap-4">
+            <div class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-300">
+                <p class="text-2xl text-gray-400 dark:text-gray-500">
+                    <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 18 18">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 1v16M1 9h16" />
+                    </svg>
+                </p>
+            </div>
+        </div>
 
     </div>
 </template>

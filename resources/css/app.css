@@ -11,31 +11,66 @@ body {
 }
 
 @layer utilities {
-    .connected-list > li::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        bottom: 0;
+    /* No normal bullets please */
+    .connected-list {
+        /* list-style-type: none; */
+    }
+
+    .collected-item::marker {
+        font-size: 25px;
+        color: #c00;
+    }
+
+    .collected-item {
+        /* You need to turn on relative positioning so the line is placed relative to the item rather than absolutely on the page */
+        position: relative;
+
+        /* Use padding to space things out rather than margins as the line would get broken up otherwise */
+        margin: 0;
+        /* padding-bottom: 1em; */
+        /* padding-left: 20px; */
+    }
+
+    /* The actual line being placed before each list item, tweak width and color as appropriate */
+    .collected-item:before {
+        background-color: #c00;
         width: 2px;
-        background-color: red; /* Line color */
-    }
-
-    .connected-list > li::after {
         content: "";
         position: absolute;
-        left: 0;
-        top: 50%;
-        width: 10px;
-        height: 2px;
-        background-color: black; /* Line color */
+        top: 0px;
+        bottom: 0px;
+        left: -16px;
     }
 
-    .connected-list > li ul li::before {
-        content: none; /* Remove lines for sub-items */
+    /* Start the line further down on the first list item */
+    .collected-item:first-child:before {
+        top: 15px;
     }
 
-    .connected-list > li:last-child::before {
-        background-color: transparent; /* Remove the line after the last bullet */
+    /* Stop the line short on the final list item */
+    .collected-item:last-child:before {
+        height: 20px;
     }
+
+    .collected-bullet {
+        /* margin-left: -20px; */
+        /* width: 12px; */
+        /* fill: #c00; */
+        /* float: left; */
+        /* padding-right: 10px; */
+    }
+
+    /* Styles for the SVG bullet points */
+    /* .collected-bullet {
+        margin-left: -20px;
+        width: 12px;
+        fill: #c00;
+        float: left;
+        padding-right: 10px;
+    }
+    .collected-bullet.big {
+        width: 16px;
+        margin-left: -22px;
+        padding-right: 8px;
+    } */
 }
