@@ -6,7 +6,17 @@ import { createInertiaApp, Head, Link } from '@inertiajs/vue3';
 import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import { ZiggyVue } from '../../vendor/tightenco/ziggy';
 import { Ziggy } from './ziggy'; // if this doesn't work, try importing it from `ziggy/dist/vue
+
+/* import the fontawesome core */
+import { library, config } from '@fortawesome/fontawesome-svg-core';
+/* import font awesome icon component */
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+
+import { fas } from '@fortawesome/free-solid-svg-icons';
+
 import Layout from './Layouts/GuestLayout.vue';
+
+library.add(fas);
 
 const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
 
@@ -18,6 +28,7 @@ createInertiaApp({
             .use(plugin)
             .component("Head", Head)
             .component("Link", Link)
+            .component("font-awesome-icon", FontAwesomeIcon)
             .use(ZiggyVue)
             .mount(el);
     },

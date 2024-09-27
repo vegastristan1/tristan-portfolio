@@ -31,6 +31,8 @@ onMounted(() => {
                 <hr class="w-48 h-1 my-4 border-0 rounded bg-gray-700">
             </div>
         </div>
+
+        <!-- Education -->
         <div class="mt-4">
             <div class="">
                 <h1 class="text-2xl my-5 font-extrabold leading-none tracking-tight text-gray-200">
@@ -40,7 +42,7 @@ onMounted(() => {
                 <ul class="relative ms-5 pt-4 font-medium border-s border-gray-200">
                     <li class="mb-10 ms-10">
                         <span
-                            class="absolute flex items-center justify-center w-8 h-8 bg-red-200 rounded-full -start-4 ring-4 ring-white dark:ring-gray-900 dark:bg-green-900">
+                            class="absolute flex items-center justify-center w-8 h-8 bg-red-200 rounded-full -start-4 ring-4 ring-white">
                             <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
                                 <path fill="#ef4444" stroke="currentColor" stroke-linecap="round"
                                     stroke-linejoin="round" stroke-width="2"
@@ -58,6 +60,8 @@ onMounted(() => {
                 </ul>
             </div>
         </div>
+
+        <!-- experience -->
         <div class="mt-4">
             <div class="border-t">
                 <h1 class="text-2xl my-5 font-extrabold leading-none tracking-tight text-gray-200">
@@ -68,12 +72,7 @@ onMounted(() => {
                     <ul class="relative ms-5 pt-4 font-medium border-s border-gray-200">
                         <li class="mb-10 ms-10">
                             <span
-                                class="absolute flex items-center justify-center w-8 h-8 bg-red-200 rounded-full -start-4 ring-4 ring-white dark:ring-gray-900 dark:bg-green-900">
-                                <!-- <svg class="w-3.5 h-3.5 text-red-500" aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5" />
-                                </svg> -->
+                                class="absolute flex items-center justify-center w-8 h-8 bg-red-200 rounded-full -start-4 ring-4 ring-white">
                                 <svg class="w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path fill="#ef4444"
                                         d="M184 48l144 0c4.4 0 8 3.6 8 8l0 40L176 96l0-40c0-4.4 3.6-8 8-8zm-56 8l0 40L64 96C28.7 96 0 124.7 0 160l0 96 192 0 128 0 192 0 0-96c0-35.3-28.7-64-64-64l-64 0 0-40c0-30.9-25.1-56-56-56L184 0c-30.9 0-56 25.1-56 56zM512 288l-192 0 0 32c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-32L0 288 0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-128z" />
@@ -108,7 +107,7 @@ onMounted(() => {
                         </li>
                         <li class="mb-10 ms-10">
                             <span
-                                class="absolute flex items-center justify-center w-8 h-8 bg-red-200 rounded-full -start-4 ring-4 ring-white dark:ring-gray-900 dark:bg-green-900">
+                                class="absolute flex items-center justify-center w-8 h-8 bg-red-200 rounded-full -start-4 ring-4 ring-white">
                                 <svg class="w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path fill="#ef4444"
                                         d="M184 48l144 0c4.4 0 8 3.6 8 8l0 40L176 96l0-40c0-4.4 3.6-8 8-8zm-56 8l0 40L64 96C28.7 96 0 124.7 0 160l0 96 192 0 128 0 192 0 0-96c0-35.3-28.7-64-64-64l-64 0 0-40c0-30.9-25.1-56-56-56L184 0c-30.9 0-56 25.1-56 56zM512 288l-192 0 0 32c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-32L0 288 0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-128z" />
@@ -137,7 +136,7 @@ onMounted(() => {
                         </li>
                         <li class="mb-10 ms-10">
                             <span
-                                class="absolute flex items-center justify-center w-8 h-8 bg-red-200 rounded-full -start-4 ring-4 ring-white dark:ring-gray-900 dark:bg-green-900">
+                                class="absolute flex items-center justify-center w-8 h-8 bg-red-200 rounded-full -start-4 ring-4 ring-white">
                                 <svg class="w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path fill="#ef4444"
                                         d="M184 48l144 0c4.4 0 8 3.6 8 8l0 40L176 96l0-40c0-4.4 3.6-8 8-8zm-56 8l0 40L64 96C28.7 96 0 124.7 0 160l0 96 192 0 128 0 192 0 0-96c0-35.3-28.7-64-64-64l-64 0 0-40c0-30.9-25.1-56-56-56L184 0c-30.9 0-56 25.1-56 56zM512 288l-192 0 0 32c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-32L0 288 0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-128z" />
@@ -191,6 +190,57 @@ onMounted(() => {
                         </li>
 
                     </ul> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- skills -->
+        <div class="mt-4">
+            <div class="border-5">
+                <h1 class="text-2xl my-5 font-extrabold leading-none tracking-tight text-gray-200">
+                    Skills
+                </h1>
+
+                <div class="p-4">
+                    <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
+                        <div class="grid grid-cols-3 gap-4 mb-4">
+                            <div class="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-gray-800">
+                                <p class="text-2xl text-gray-400 dark:text-gray-500">
+                                    <font-awesome-icon icon="fish" />
+                                    <font-awesome-icon icon="frog" size="sm" bounce />
+                                    <font-awesome-icon icon="dog" size="3x" />
+                                    <font-awesome-icon icon="cat" size="2x" flip="horizontal" />
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-gray-800">
+                                <p class="text-2xl text-gray-400 dark:text-gray-500">
+                                    <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 18 18">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="M9 1v16M1 9h16" />
+                                    </svg>
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-gray-800">
+                                <p class="text-2xl text-gray-400 dark:text-gray-500">
+                                    <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 18 18">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="M9 1v16M1 9h16" />
+                                    </svg>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-center h-48 mb-4 rounded bg-gray-50 dark:bg-gray-800">
+                            <p class="text-2xl text-gray-400 dark:text-gray-500">
+                                <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 18 18">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M9 1v16M1 9h16" />
+                                </svg>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
