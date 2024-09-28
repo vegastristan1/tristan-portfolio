@@ -203,31 +203,45 @@ onMounted(() => {
 
                 <div class="p-4">
                     <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
-                        <div class="grid grid-cols-3 gap-4 mb-4">
-                            <div class="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-gray-800">
-                                <p class="text-2xl text-gray-400 dark:text-gray-500">
-                                    <font-awesome-icon icon="fish" />
-                                    <font-awesome-icon icon="frog" size="sm" bounce />
-                                    <font-awesome-icon icon="dog" size="3x" />
-                                    <font-awesome-icon icon="cat" size="2x" flip="horizontal" />
+                        <div class="grid grid-cols-8 gap-4 mb-4">
+                            <div class="flex items-center justify-center h-24 rounded bg-gray-600">
+                                <p class="text-2xl text-gray-50 ">
+                                    <font-awesome-icon icon="fa-brands fa-html5" size="2xl" />
                                 </p>
                             </div>
-                            <div class="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-gray-800">
-                                <p class="text-2xl text-gray-400 dark:text-gray-500">
-                                    <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                        fill="none" viewBox="0 0 18 18">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="M9 1v16M1 9h16" />
-                                    </svg>
+                            <div class="flex items-center justify-center h-24 rounded bg-gray-600">
+                                <p class="text-2xl text-gray-50 ">
+                                    <font-awesome-icon icon="fa-brands fa-figma" size="3x" />
                                 </p>
                             </div>
-                            <div class="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-gray-800">
-                                <p class="text-2xl text-gray-400 dark:text-gray-500">
-                                    <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                        fill="none" viewBox="0 0 18 18">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="M9 1v16M1 9h16" />
-                                    </svg>
+                            <div class="flex items-center justify-center h-24 rounded bg-gray-600">
+                                <p class="text-2xl text-gray-50 ">
+                                    <font-awesome-icon icon="fa-brands fa-laravel" size="2x" />
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-center h-24 rounded bg-gray-600">
+                                <p class="text-2xl text-gray-50 ">
+                                    <font-awesome-icon icon="fa-brands fa-vuejs" size="2x" />
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-center h-24 rounded bg-gray-600">
+                                <p class="text-2xl text-gray-50 ">
+                                    <font-awesome-icon icon="fa-brands fa-node" size="2x" />
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-center h-24 rounded bg-gray-600">
+                                <p class="text-2xl text-gray-50 ">
+                                    <font-awesome-icon icon="fa-brands fa-react" size="2x" />
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-center h-24 rounded bg-gray-600">
+                                <p class="text-2xl text-gray-50 ">
+                                    <font-awesome-icon icon="fa-brands fa-bootstrap" size="2x" />
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-center h-24 rounded bg-gray-600">
+                                <p class="text-2xl text-gray-50 ">
+                                    <font-awesome-icon icon="fa-brands fa-js" size="2x" />
                                 </p>
                             </div>
                         </div>
