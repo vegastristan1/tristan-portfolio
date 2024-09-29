@@ -200,61 +200,80 @@ onMounted(() => {
                 <h1 class="text-2xl my-5 font-extrabold leading-none tracking-tight text-gray-200">
                     Skills
                 </h1>
-
+                <!-- px-24 -->
                 <div class="p-4">
-                    <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
-                        <div class="grid grid-cols-8 gap-4 mb-4">
-                            <div class="flex items-center justify-center h-24 rounded bg-gray-600">
-                                <p class="text-2xl text-gray-50 ">
-                                    <font-awesome-icon icon="fa-brands fa-html5" size="2xl" />
-                                </p>
+                    <div
+                        class="sm:px-2 md:px-5 lg:px-20 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4">
+                        <div class="grid gap-4 py-10">
+                            <div>
+                                <div class="flex items-center justify-center h-60 rounded-lg bg-gray-600">
+                                    <font-awesome-icon icon="fa-brands fa-html5" size="6x" color="white" />
+                                </div>
                             </div>
-                            <div class="flex items-center justify-center h-24 rounded bg-gray-600">
-                                <p class="text-2xl text-gray-50 ">
-                                    <font-awesome-icon icon="fa-brands fa-figma" size="3x" />
-                                </p>
+                            <div>
+                                <div class="flex items-center justify-center h-40 rounded-lg bg-gray-600">
+                                    <font-awesome-icon icon="fa-brands fa-angular" size="6x" />
+                                </div>
                             </div>
-                            <div class="flex items-center justify-center h-24 rounded bg-gray-600">
-                                <p class="text-2xl text-gray-50 ">
-                                    <font-awesome-icon icon="fa-brands fa-laravel" size="2x" />
-                                </p>
-                            </div>
-                            <div class="flex items-center justify-center h-24 rounded bg-gray-600">
-                                <p class="text-2xl text-gray-50 ">
-                                    <font-awesome-icon icon="fa-brands fa-vuejs" size="2x" />
-                                </p>
-                            </div>
-                            <div class="flex items-center justify-center h-24 rounded bg-gray-600">
-                                <p class="text-2xl text-gray-50 ">
-                                    <font-awesome-icon icon="fa-brands fa-node" size="2x" />
-                                </p>
-                            </div>
-                            <div class="flex items-center justify-center h-24 rounded bg-gray-600">
-                                <p class="text-2xl text-gray-50 ">
-                                    <font-awesome-icon icon="fa-brands fa-react" size="2x" />
-                                </p>
-                            </div>
-                            <div class="flex items-center justify-center h-24 rounded bg-gray-600">
-                                <p class="text-2xl text-gray-50 ">
-                                    <font-awesome-icon icon="fa-brands fa-bootstrap" size="2x" />
-                                </p>
-                            </div>
-                            <div class="flex items-center justify-center h-24 rounded bg-gray-600">
-                                <p class="text-2xl text-gray-50 ">
-                                    <font-awesome-icon icon="fa-brands fa-js" size="2x" />
-                                </p>
+                            <div>
+                                <div class="flex items-center justify-center h-60 rounded-lg bg-gray-600">
+                                    <font-awesome-icon icon="fa-brands fa-laravel" size="6x" />
+                                </div>
                             </div>
                         </div>
-                        <div class="flex items-center justify-center h-48 mb-4 rounded bg-gray-50 dark:bg-gray-800">
-                            <p class="text-2xl text-gray-400 dark:text-gray-500">
-                                <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                    fill="none" viewBox="0 0 18 18">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="M9 1v16M1 9h16" />
-                                </svg>
-                            </p>
+                        <div class="grid gap-4">
+                            <div>
+                                <div class="flex items-center justify-center h-52 rounded-lg bg-gray-600">
+                                    <font-awesome-icon icon="fa-brands fa-css3-alt" size="6x" />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex items-center justify-center h-72 rounded-lg bg-gray-600">
+                                    <font-awesome-icon icon="fa-brands fa-wordpress" size="6x" />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex items-center justify-center h-52 rounded-lg bg-gray-600">
+                                    <font-awesome-icon icon="fa-brands fa-python" size="6x" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid gap-4 py-10">
+                            <div>
+                                <div class="flex items-center justify-center h-60 rounded-lg bg-gray-600">
+                                    <font-awesome-icon icon="fa-brands fa-square-js" size="6x" />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex items-center justify-center h-40 rounded-lg bg-gray-600">
+                                    <font-awesome-icon icon="fa-brands fa-php" size="6x" />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex items-center justify-center h-60 rounded-lg bg-gray-600">
+                                    <font-awesome-icon icon="fa-brands fa-aws" size="6x" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid gap-4">
+                            <div>
+                                <div class="flex items-center justify-center h-52 rounded-lg bg-gray-600">
+                                    <font-awesome-icon icon="fa-brands fa-vuejs" size="6x" />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex items-center justify-center h-72 rounded-lg bg-gray-600">
+                                    <font-awesome-icon icon="fa-brands fa-node-js" size="6x" />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex items-center justify-center h-52 rounded-lg bg-gray-600">
+                                    <font-awesome-icon icon="fa-brands fa-git-alt" size="6x" />
+                                </div>
+                            </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
