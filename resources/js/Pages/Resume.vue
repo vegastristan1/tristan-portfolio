@@ -198,7 +198,7 @@ onMounted(() => {
         <div class="mt-4">
             <div class="border-5">
                 <h1 class="text-2xl my-5 font-extrabold leading-none tracking-tight text-gray-200">
-                    Skills
+                    Skills & Tools
                 </h1>
                 <!-- px-24 -->
                 <div class="p-4">
