@@ -1,6 +1,7 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import PortfolioLayout from '@/Layouts/PortfolioLayout.vue';
+import SocialMediaSection from '@/Components/SocialMediaSection.vue';
 
 // Define the layout for this page
 defineOptions({ layout: PortfolioLayout });
@@ -25,9 +26,13 @@ onMounted(() => {
     <div class="p-4 border-2 border-gray-600 border-dashed rounded-lg bg-slate-800">
         <div class="pb-4">
             <div class="mb-5">
-                <h1 class="text-2xl font-extrabold leading-none tracking-tight text-gray-200">
-                    About Me
-                </h1>
+                <div class="grid grid-cols-2">
+                    <h1 class="text-2xl font-extrabold leading-none tracking-tight text-gray-200">
+                        About Me
+                    </h1>
+                    <SocialMediaSection class="!justify-end lg:hidden" />
+                </div>
+
                 <hr class="w-48 h-1 my-4 border-0 rounded bg-gray-700">
             </div>
 
