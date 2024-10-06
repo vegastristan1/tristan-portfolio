@@ -19,7 +19,6 @@
         }
     ],
     "env": {
-        "APP_NAME": "Test",
         "APP_ENV": "production",
         "APP_DEBUG": "true",
         "APP_URL": "https://tristan-portfolio-ecru.vercel.app/",
