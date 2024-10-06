@@ -1,5 +1,5 @@
 <template>
-    <ul class="space-y-2 font-medium place-self-center border-gray-200 text-sm sm:text-sm md:text-sm lg:text-xs">
+    <ul class="space-y-2 font-medium place-self-center border-gray-200 text-sm sm:text-sm md:text-sm lg:text-sm">
         <li>
             <a href="#"
                 class="flex items-center p-2 text-gray-400 transition duration-75 rounded-lg hover:bg-gray-700 hover:text-white group">
