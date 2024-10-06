@@ -20,7 +20,7 @@ import Layout from './Layouts/GuestLayout.vue';
 
 library.add(fas, fab, far);
 
-const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
+const appName = import.meta.env.VITE_APP_NAME || 'Tristan';
 
 createInertiaApp({
     title: (title) => `${appName} | ${title}`,
