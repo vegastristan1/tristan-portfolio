@@ -216,63 +216,63 @@ onMounted(() => {
                             </div>
                             <div>
                                 <div class="flex items-center justify-center h-40 rounded-lg bg-gray-600">
-                                    <font-awesome-icon icon="fa-brands fa-angular" size="6x" />
+                                    <font-awesome-icon icon="fa-brands fa-angular" size="6x" color="white" />
                                 </div>
                             </div>
                             <div>
                                 <div class="flex items-center justify-center h-60 rounded-lg bg-gray-600">
-                                    <font-awesome-icon icon="fa-brands fa-laravel" size="6x" />
+                                    <font-awesome-icon icon="fa-brands fa-laravel" size="6x" color="white" />
                                 </div>
                             </div>
                         </div>
                         <div class="grid gap-4">
                             <div>
                                 <div class="flex items-center justify-center h-52 rounded-lg bg-gray-600">
-                                    <font-awesome-icon icon="fa-brands fa-css3-alt" size="6x" />
+                                    <font-awesome-icon icon="fa-brands fa-css3-alt" size="6x" color="white" />
                                 </div>
                             </div>
                             <div>
                                 <div class="flex items-center justify-center h-72 rounded-lg bg-gray-600">
-                                    <font-awesome-icon icon="fa-brands fa-wordpress" size="6x" />
+                                    <font-awesome-icon icon="fa-brands fa-wordpress" size="6x" color="white" />
                                 </div>
                             </div>
                             <div>
                                 <div class="flex items-center justify-center h-52 rounded-lg bg-gray-600">
-                                    <font-awesome-icon icon="fa-brands fa-python" size="6x" />
+                                    <font-awesome-icon icon="fa-brands fa-python" size="6x" color="white" />
                                 </div>
                             </div>
                         </div>
                         <div class="grid gap-4 py-10">
                             <div>
                                 <div class="flex items-center justify-center h-60 rounded-lg bg-gray-600">
-                                    <font-awesome-icon icon="fa-brands fa-square-js" size="6x" />
+                                    <font-awesome-icon icon="fa-brands fa-square-js" size="6x" color="white" />
                                 </div>
                             </div>
                             <div>
                                 <div class="flex items-center justify-center h-40 rounded-lg bg-gray-600">
-                                    <font-awesome-icon icon="fa-brands fa-php" size="6x" />
+                                    <font-awesome-icon icon="fa-brands fa-php" size="6x" color="white" />
                                 </div>
                             </div>
                             <div>
                                 <div class="flex items-center justify-center h-60 rounded-lg bg-gray-600">
-                                    <font-awesome-icon icon="fa-brands fa-aws" size="6x" />
+                                    <font-awesome-icon icon="fa-brands fa-aws" size="6x" color="white" />
                                 </div>
                             </div>
                         </div>
                         <div class="grid gap-4">
                             <div>
                                 <div class="flex items-center justify-center h-52 rounded-lg bg-gray-600">
-                                    <font-awesome-icon icon="fa-brands fa-vuejs" size="6x" />
+                                    <font-awesome-icon icon="fa-brands fa-vuejs" size="6x" color="white" />
                                 </div>
                             </div>
                             <div>
                                 <div class="flex items-center justify-center h-72 rounded-lg bg-gray-600">
-                                    <font-awesome-icon icon="fa-brands fa-node-js" size="6x" />
+                                    <font-awesome-icon icon="fa-brands fa-node-js" size="6x" color="white" />
                                 </div>
                             </div>
                             <div>
                                 <div class="flex items-center justify-center h-52 rounded-lg bg-gray-600">
-                                    <font-awesome-icon icon="fa-brands fa-git-alt" size="6x" />
+                                    <font-awesome-icon icon="fa-brands fa-git-alt" size="6x" color="white" />
                                 </div>
                             </div>
                         </div>
