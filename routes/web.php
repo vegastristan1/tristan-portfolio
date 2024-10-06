@@ -26,9 +26,10 @@ Route::get('/resume', function () {
     return Inertia::render('Resume');
 })->name('resume');
 
-// Route::get('/', function () {
-//     return view('sample');
-// });
+Route::get('/download-cv', function () {
+    $file = public_path('storage/cv/Resume_Tristan_Vegas.pdf');
+    return response()->download($file);
+})->name('download.cv');
 
 // Route::get('/dashboard', function () {
 //     return Inertia::render('Dashboard', ['users' => User::paginate(5)]);

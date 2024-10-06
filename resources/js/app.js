@@ -5,7 +5,7 @@ import { createApp, h } from 'vue';
 import { createInertiaApp, Head, Link } from '@inertiajs/vue3';
 import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import { ZiggyVue } from '../../vendor/tightenco/ziggy';
-import { Ziggy } from './ziggy'; // if this doesn't work, try importing it from `ziggy/dist/vue
+// import { Ziggy } from './ziggy'; // if this doesn't work, try importing it from `ziggy/dist/vue
 
 /* import the fontawesome core */
 import { library, config } from '@fortawesome/fontawesome-svg-core';

@@ -1,6 +1,8 @@
 <script setup>
 import { ref } from 'vue';
 import SideBarNavigation from '@/Components/SideBarNavigation.vue';
+import Dropdown from '@/Components/Dropdown.vue';
+import DropdownLink from '@/Components/DropdownLink.vue';
 
 
 const showingNavigationDropdown = ref(false);
@@ -39,7 +41,7 @@ const showingNavigationDropdown = ref(false);
                 <div :class="{ block: showingNavigationDropdown, hidden: !showingNavigationDropdown }"
                     class="w-full md:block md:w-auto text-center" id="navbar-default">
                     <ul
-                        class="text-xl font-bold flex flex-col p-4 md:p-0 mt-4 border-0 rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 sm:border-0 md:border-0 lg:border-0 bg-slate-800 border-gray-700">
+                        class="text-xl font-bold flex flex-col items-center p-4 md:p-0 mt-4 border-0 rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 sm:border-0 md:border-0 lg:border-0 bg-slate-800 border-gray-700">
                         <li>
                             <Link :href="route('about')" :class="{
                                 'block py-2 px-3  rounded md:bg-transparent md:p-0 text-red-600': route().current('about'),
@@ -66,6 +68,10 @@ const showingNavigationDropdown = ref(false);
                             <a href="#"
                                 class="block py-2 px-3 rounded hover:bg-transparent md:border-0 hover:text-red-600 md:p-0 text-white hover:bg-gray-700">Contact</a>
                         </li> -->
+                        <li>
+                            <a :href="route('download.cv')"
+                                class="block py-2 px-3 rounded border border-1 border-red-600 bg-red-600 hover:border-white hover:bg-white hover:text-red-600 md:py-2 text-white">Download</a>
+                        </li>
                     </ul>
                 </div>
             </div>
