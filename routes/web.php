@@ -27,7 +27,7 @@ Route::get('/resume', function () {
 })->name('resume');
 
 Route::get('/download-cv', function () {
-    $file = public_path('storage/cv/Resume_Tristan_Vegas.pdf');
+    $file = public_path('cv/Resume_Tristan_Vegas.pdf');
     return response()->download($file);
 })->name('download.cv');
 
