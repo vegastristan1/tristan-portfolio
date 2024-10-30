@@ -15,7 +15,7 @@ class MetaTags extends Component
     public $keywords;
     public $author;
 
-    public function __construct($title = 'Tristan Vegas - Portfolio', $description = '', $siteUrl = '', $ogImage = '', $keywords = '', $author = 'Tristan Vegas')
+    public function __construct($title = 'Tristan Vegas | IT Graduate & Web Developer Portfolio', $description = '', $siteUrl = '', $ogImage = '', $keywords = '', $author = 'Tristan Vegas')
     {
         $this->title = $title;
         $this->description = $description;
