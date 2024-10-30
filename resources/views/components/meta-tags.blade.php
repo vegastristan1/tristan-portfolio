@@ -29,8 +29,8 @@
 <link rel="manifest" href="{{ asset('favicon/site.webmanifest') }}">
 <link rel="icon" type="image/svg+xml" href="{{ asset('favicon/favicon.svg') }}" />
 <link rel="shortcut icon" href="{{ asset('favicon/favicon.ico') }}" />
-<meta name="apple-mobile-web-app-title" content="Tan Portfolio" />
-<meta name="msapplication-TileColor" content="#da532c">
+<meta name="apple-mobile-web-app-title" content="Tristan's Portfolio" />
+<meta name="msapplication-TileColor" content="#1E90FF">
 <meta name="theme-color" content="#ffffff">
 
 <meta name="keywords" content="{{ $keywords }}">
