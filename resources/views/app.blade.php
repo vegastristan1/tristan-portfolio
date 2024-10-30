@@ -25,9 +25,7 @@
     <meta property="twitter:title" content="Tristan Vegas" />
     <meta property="twitter:description" content="Twitter link preview description">
     <meta property="description" content="Search engine description" />
-    {{-- <meta property="og:description" content="Link preview description" /> --}}
-    <meta property="og:description"
-        content="Experienced IT professional in web development, specializing in dynamic and user-centered websites. Passionate about creating seamless solutions and thriving in collaborative environments." />
+    <meta property="og:description" content="Link preview description" />
     <meta property="twitter:image" content="{{ asset('images/1730290810451rp3j7ax7.jpg') }}" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicon/apple-touch-icon.png') }}">
