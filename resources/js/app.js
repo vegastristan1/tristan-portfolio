@@ -18,6 +18,10 @@ import { far } from '@fortawesome/free-regular-svg-icons';
 
 import Layout from './Layouts/GuestLayout.vue';
 
+import { inject } from '@vercel/analytics';
+ 
+inject();
+
 library.add(fas, fab, far);
 
 const appName = import.meta.env.VITE_APP_NAME || 'Tristan';
