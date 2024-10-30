@@ -3,7 +3,7 @@
 
 <head>
     <x-meta-tags title="Tristan Vegas"
-        description="Information Technology graduate with extensive experience developing websites, managing IT support more broadly as well associated infrastructure Committed to human-centered web solutions and teamwork"
+        description="IT graduate skilled in web development, IT support, and infrastructure, focused on user-centered solutions and effective teamwork."
         siteUrl="https://tristan-portfolio-ecru.vercel.app/" ogImage="{{ asset('images/1730290810451rp3j7ax7.jpg') }}"
         keywords="Web Developer, Frontend Developer, Backend Developer, Full Stack Developer" author="Tristan Vegas" />
 
