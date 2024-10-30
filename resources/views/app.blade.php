@@ -5,7 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title inertia>{{ config('app.name', 'Laravel') }}</title>
+    <title inertia>{
+    { config('app.name', 'Laravel')
+    }
+}</title>
 
     <!-- Primary Meta Tags -->
     <meta name="title" content="Tristan Vegas" />
@@ -25,8 +28,7 @@
     <meta property="twitter:title" content="Tristan Vegas" />
     <meta property="twitter:description" content="Twitter link preview description">
     <meta property="description" content="Search engine description" />
-    <meta property="og:description"
-        content="IT graduate and skilled web developer with experience in dynamic, user-focused websites and CMS solutions that empower clients. Passionate about seamless, collaborative web development." />
+    <meta property="og:description" content="IT graduate and skilled web developer with experience in dynamic, user-focused websites and CMS solutions that empower clients. Passionate about seamless, collaborative web development." />
     <meta property="twitter:image" content="{{ asset('images/1730290810451rp3j7ax7.jpg') }}" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicon/apple-touch-icon.png') }}">
