@@ -20,7 +20,7 @@
     <meta property="og:image" content="{{ asset('images/hero-image-1.png') }}" />
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:card" content="player" />
     <meta property="twitter:url" content="https://tristan-portfolio-ecru.vercel.app/" />
     <meta property="twitter:title" content="Tristan Vegas" />
     <meta property="twitter:description" content="Twitter link preview description">
