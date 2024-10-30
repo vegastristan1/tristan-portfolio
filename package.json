@@ -24,6 +24,7 @@
         "@fortawesome/free-solid-svg-icons": "^6.6.0",
         "@fortawesome/vue-fontawesome": "^3.0.8",
         "@vercel/analytics": "^1.3.2",
+        "@vercel/speed-insights": "^1.0.14",
         "lodash": "^4.17.21"
     }
 }

@@ -19,8 +19,10 @@ import { far } from '@fortawesome/free-regular-svg-icons';
 import Layout from './Layouts/GuestLayout.vue';
 
 import { inject } from '@vercel/analytics';
+import { injectSpeedInsights } from '@vercel/speed-insights';
  
 inject();
+injectSpeedInsights();
 
 library.add(fas, fab, far);
 
