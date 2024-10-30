@@ -31,7 +31,7 @@
     <meta property="twitter:description"
         content="Information Technology graduate with extensive experience developing websites, managing IT support more broadly as well associated infrastructure Committed to human-centered web solutions and teamwork." />
     {{-- <meta property="twitter:image" content="{{ asset('images/1730290810451rp3j7ax7.jpg') }}" /> --}}
-    <meta property="twitter:image" content="{{ asset('images/hero-image-1.png') }}" />
+    <meta property="twitter:image" content="{{ asset('images/1730290810451rp3j7ax7.jpg') }}" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicon/apple-touch-icon.png') }}">
     <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('favicon/favicon-96x96.png') }}">
