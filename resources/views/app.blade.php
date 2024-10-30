@@ -23,15 +23,9 @@
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://tristan-portfolio-ecru.vercel.app/" />
     <meta property="twitter:title" content="Tristan Vegas" />
-    <meta property="twitter:description"
-        content="Graduate of BS in IT with expertise in web development, technical support, and CMS setup, delivering user-centered web solutions for clients. Collaborative and growth-focused." />
-
-    <meta property="description"
-        content="IT graduate and skilled web developer, specializing in dynamic, user-focused websites, technical support, and CMS solutions that empower client independence." />
-
-    <meta property="og:description"
-        content="Experienced IT professional in web development, specializing in dynamic and user-centered websites. Passionate about creating seamless solutions and thriving in collaborative environments." />
-
+    <meta property="twitter:description" content="Twitter link preview description">
+    <meta property="description" content="Search engine description" />
+    <meta property="og:description" content="Link preview description" />
     <meta property="twitter:image" content="{{ asset('images/1730290810451rp3j7ax7.jpg') }}" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicon/apple-touch-icon.png') }}">
