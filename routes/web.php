@@ -32,7 +32,13 @@ Route::get('/download-cv', function () {
     return response()->download($file);
 })->name('download.cv');
 
+Route::get('/2', function () {
+    return Inertia::render('');
+})->name('2.about');
 
+Route::get('/2/resume', function () {
+    return Inertia::render('');
+})->name('2.resume');
 
 // Route::get('/dashboard', function () {
 //     return Inertia::render('Dashboard', ['users' => User::paginate(5)]);
