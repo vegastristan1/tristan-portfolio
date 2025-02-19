@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Application;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PracticeController;
+use App\Http\Controllers\AnimationController;
 
 // Route::get('/', function () {
 //     return Inertia::render('Welcome', [
@@ -30,6 +31,8 @@ Route::get('/download-cv', function () {
     $file = public_path('cv/Resume_Tristan_Vegas.pdf');
     return response()->download($file);
 })->name('download.cv');
+
+
 
 // Route::get('/dashboard', function () {
 //     return Inertia::render('Dashboard', ['users' => User::paginate(5)]);
@@ -57,8 +60,13 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__ . '/auth.php';
+Route::get('/workspace/animation/boxes', [AnimationController::class, 'index_boxes']);
+Route::get('/workspace/animation/boxes-2', [AnimationController::class, 'index_boxes_2']);
+Route::get('/workspace/animation/raindrop', [AnimationController::class, 'index_raindrop']);
+Route::get('/workspace/animation/bubble', [AnimationController::class, 'index_bubble']);
+Route::get('/workspace/animation/test', [AnimationController::class, 'index_test']);
 
+require __DIR__ . '/auth.php';
 
 // Route::get('/new', [PracticeController::class, 'index']);
 

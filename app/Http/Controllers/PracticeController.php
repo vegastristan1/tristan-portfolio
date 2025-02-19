@@ -13,10 +13,10 @@ class PracticeController extends Controller
     //     ]);
     // }
 
-    // public function index()
-    // {
-    //     return view('practice');
-    // }
+    public function index()
+    {
+        return view('practice');
+    }
 
     // public function missing_404()
     // {

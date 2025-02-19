@@ -1,12 +1,13 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 import vue from '@vitejs/plugin-vue';
-// import path from 'path'
 
 export default defineConfig({
     plugins: [
         laravel({
-            input: 'resources/js/app.js',
+            input: [
+                'resources/js/app.js',
+                'resources/js/app-raindrop.js',],
             refresh: true,
         }),
         vue({
@@ -18,10 +19,4 @@ export default defineConfig({
             },
         }),
     ],
-    // resolve: {
-	// 	alias: {
-	// 		ziggy: path.resolve('vendor/tightenco/ziggy'),
-	// 	},
-	// },
-    // base: 'https://tristan-portfolio-ecru.vercel.app/',
 });
